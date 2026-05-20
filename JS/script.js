@@ -10,6 +10,12 @@ function convertToHex(digit) {
     return Result.padStart(1, '0');
 }
 
+function convertToOctal(digit) {
+    let decimalNumber = parseInt(digit, 10);
+    let Result = decimalNumber.toString(8);
+    return Result.padStart(3, '0');
+}
+
 const output = document.querySelector('#output');
 const allButtons = document.querySelectorAll('.btn');
 
@@ -67,6 +73,20 @@ allButtons.forEach(singleButton => {
 
                     currentValue = currentValue.replace(/(\d+)Hex/gi, function(match, group1) {
                         return convertToHex(group1);
+                    });
+
+                    
+                    output.value = currentValue;
+                    return;
+                }
+
+              if (currentValue.includes("Oct")) {
+                    currentValue = currentValue.replace(/Oct(\d+)/gi, function(match, group1) {
+                        return convertToOctal(group1);
+                    });
+
+                    currentValue = currentValue.replace(/(\d+)Oct/gi, function(match, group1) {
+                        return convertToOctal(group1);
                     });
 
                     
