@@ -120,6 +120,14 @@ allButtons.forEach(singleButton => {
             valueToAdd = "*10**";
         }
 
+    else if (valueToAdd === "sin" || valueToAdd === "cos" || valueToAdd ==="tan"
+        || valueToAdd === "log" || valueToAdd === "ln") {
+            valueToAdd +=   "(";
+        }
+
+        
+    
+
         
         output.value += valueToAdd;
     });
