@@ -1,3 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    
+   
+    background-size: 400% 400%;
+    
+    
+    animation: gradientShift 10s ease infinite;
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
 .box {
     background-color: rgb(24, 25, 26); 
     min-height: 470px;
@@ -22,9 +57,9 @@
 .blue {
     width: 280px; 
     height: 95px;
-    background: linear-gradient(135deg, rgb(40, 83, 169), rgb(28, 59, 115)); 
+    background: linear-gradient(135deg, rgb(36, 71, 140), rgb(28, 59, 115)); 
     border-radius: 10px;
-    border: 3px solid #354053;
+    border: 3px solid #353f50;
     color: #e2e8f0;
     font-family: 'Courier New', Courier, monospace; 
     font-size: 26px;
@@ -85,7 +120,7 @@
     color: #ffffff;
 }
 
-.btn.system.shift {
+.btn.system.off {
     background-color: rgb(99, 102, 241);
     color: #ffffff;
 }
