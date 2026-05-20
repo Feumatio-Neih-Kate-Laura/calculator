@@ -22,9 +22,9 @@
 .blue {
     width: 280px; 
     height: 95px;
-    background: linear-gradient(135deg, rgb(36, 71, 140), rgb(28, 59, 115)); 
+    background: linear-gradient(135deg, rgb(40, 83, 169), rgb(28, 59, 115)); 
     border-radius: 10px;
-    border: 3px solid #353f50;
+    border: 3px solid #354053;
     color: #e2e8f0;
     font-family: 'Courier New', Courier, monospace; 
     font-size: 26px;
